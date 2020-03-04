@@ -1,0 +1,26 @@
+<svg id="icon3" xmlns="http://www.w3.org/2000/svg" width="27.581" height="32.734" viewBox="0 0 27.581 32.734">
+<style type="text/css">
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+
+  #icon3:hover .st2{
+    cursor:pointer !important;
+    fill:#FFFF00 !important;}
+</style>
+  <path id="Path_19" class="st2" data-name="Path 19" d="M5.709,78.187A5.7,5.7,0,0,0,1.279,80.3V77.581a12.469,12.469,0,0,1,3.23-8.366.639.639,0,1,0-.949-.857A13.746,13.746,0,0,0,0,77.581V83.9A5.715,5.715,0,0,0,5.709,89.6a.639.639,0,0,0,.639-.639V78.826A.639.639,0,0,0,5.709,78.187ZM5.069,88.279a4.43,4.43,0,0,1,0-8.768Zm0,0" transform="translate(0 -63.79)" fill="#fff" fill-rule="evenodd"/>
+  <path id="Path_20"  class="st2" data-name="Path 20" d="M132.844,4.051a13.729,13.729,0,0,0-15.7-2.686.639.639,0,1,0,.556,1.151A12.328,12.328,0,0,1,123.1,1.279,12.526,12.526,0,0,1,135.615,13.79v2.719a5.7,5.7,0,0,0-4.43-2.112.639.639,0,0,0-.639.639V25.175a.639.639,0,0,0,.639.639,5.715,5.715,0,0,0,5.709-5.709V13.79A13.693,13.693,0,0,0,132.844,4.051Zm-1.019,20.439V15.721a4.43,4.43,0,0,1,0,8.768Zm0,0" transform="translate(-109.313)" fill="#fff" fill-rule="evenodd"/>
+  <path id="Path_21" class="st2"  data-name="Path 21" d="M120.4,378.78a.639.639,0,0,0-1.279,0v3.19a5.3,5.3,0,0,0-2.786-.726c-2.28,0-4.065,1.2-4.065,2.727s1.786,2.727,4.065,2.727,4.065-1.2,4.065-2.727V378.78Zm-4.065,6.64c-1.595,0-2.787-.765-2.787-1.449s1.192-1.449,2.787-1.449,2.785.764,2.786,1.448v0C119.12,384.656,117.929,385.42,116.335,385.42Zm0,0" transform="translate(-105.092 -353.965)" fill="#fff" fill-rule="evenodd"/>
+  <path id="Path_22"  class="st2" data-name="Path 22" d="M224.376,220.006l-3.915-2.936a.639.639,0,0,0-1.023.512v5.191a.639.639,0,1,0,1.279,0V218.86l2.637,1.977v4.052a.639.639,0,1,0,1.279,0v-4.372A.64.64,0,0,0,224.376,220.006Zm0,0" transform="translate(-205.408 -203.072)" fill="#fff" fill-rule="evenodd"/>
+  <path id="Path_23" class="st2"  data-name="Path 23" d="M83.26,41.16a.639.639,0,1,0,.639.639A.641.641,0,0,0,83.26,41.16Zm0,0" transform="translate(-77.339 -38.529)" />
+  <path id="Path_24"  class="st2" data-name="Path 24" d="M220.077,338.141a.639.639,0,1,0,.639.639A.641.641,0,0,0,220.077,338.141Zm0,0" transform="translate(-205.408 -316.522)" />
+  <defs>
+	<script>
+		document.querySelector('#icon3').addEventListener("click", function(){
+			
+			console.log('clicked on te SVG!', this.id);
+			
+		})
+		
+	</script>
+</defs>
+
+</svg>

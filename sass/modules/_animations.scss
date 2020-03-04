@@ -1,0 +1,32 @@
+
+ // Buttons hover animation, hero section
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 1em rgba(#fff,0);
+  border-radius: 10px;
+  outline: none;
+
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 $hover; }
+}
+
+button {
+    background-color: rgba(#000000,0.6);
+    color:$white;
+    border: 1px solid $btn-outline;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 3em;
+    font-family: $montserrat;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+
+
+
+  
+  
+  

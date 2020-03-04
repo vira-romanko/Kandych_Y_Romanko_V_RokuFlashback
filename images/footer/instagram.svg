@@ -1,0 +1,28 @@
+<svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="46.402" height="46.402" viewBox="0 0 46.402 46.402">
+
+<style type="text/css">
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+
+  #instagram:hover .st9{
+    cursor:pointer !important;
+    fill:#FFFF00 !important;}
+</style>
+  <path id="Path_56" class="st9" data-name="Path 56" d="M34.62,0H21.388a.906.906,0,0,0,0,1.813H34.62a9.98,9.98,0,0,1,9.969,9.969V34.62a9.98,9.98,0,0,1-9.969,9.969H11.782A9.98,9.98,0,0,1,1.813,34.62V11.782a9.98,9.98,0,0,1,9.969-9.969h2.356a.906.906,0,0,0,0-1.813H11.782A11.8,11.8,0,0,0,0,11.782V34.62A11.8,11.8,0,0,0,11.782,46.4H34.62A11.8,11.8,0,0,0,46.4,34.62V11.782A11.8,11.8,0,0,0,34.62,0Zm0,0" transform="translate(0 0)" fill="#fff"/>
+  <path id="Path_57"  class="st9" data-name="Path 57" d="M68.639,79.152H71A8.166,8.166,0,0,0,79.152,71V48.157A8.166,8.166,0,0,0,71,40H48.157A8.166,8.166,0,0,0,40,48.157V71a8.166,8.166,0,0,0,8.157,8.157H61.388a.906.906,0,0,0,0-1.813H48.157A6.351,6.351,0,0,1,41.813,71V48.157a6.351,6.351,0,0,1,6.344-6.344H71a6.351,6.351,0,0,1,6.344,6.344V71A6.351,6.351,0,0,1,71,77.339H68.639a.906.906,0,1,0,0,1.813Zm0,0" transform="translate(-36.375 -36.375)" fill="#fff"/>
+  <path id="Path_58" class="st9" data-name="Path 58" d="M165.938,155.969a9.969,9.969,0,1,0-9.969,9.969A9.981,9.981,0,0,0,165.938,155.969Zm-9.969,8.157a8.157,8.157,0,1,1,8.157-8.157A8.166,8.166,0,0,1,155.969,164.126Zm0,0" transform="translate(-132.768 -132.768)" fill="#fff"/>
+  <path id="Path_59"  class="st9" data-name="Path 59" d="M192.344,186a6.344,6.344,0,1,0,6.344,6.344A6.351,6.351,0,0,0,192.344,186Zm0,10.875a4.531,4.531,0,1,1,4.531-4.531A4.537,4.537,0,0,1,192.344,196.875Zm0,0" transform="translate(-169.143 -169.143)" fill="#fff"/>
+  <path id="Path_60"  class="st9" data-name="Path 60" d="M349.25,93.629a3.625,3.625,0,1,0-3.625,3.625A3.629,3.629,0,0,0,349.25,93.629Zm-5.438,0a1.813,1.813,0,1,1,1.813,1.813A1.815,1.815,0,0,1,343.813,93.629Zm0,0" transform="translate(-311.005 -81.847)" fill="#fff"/>
+  <path id="Path_61"  class="st9" data-name="Path 61" d="M186.907,1.813a.906.906,0,1,0,0-1.813h0a.906.906,0,0,0,0,1.813Zm0,0" transform="translate(-169.143 0)" fill="#fff"/>
+  <path id="Path_62" class="st9" data-name="Path 62" d="M306.906,452a.906.906,0,1,0,.907.906.906.906,0,0,0-.907-.906Zm0,0" transform="translate(-278.268 -411.036)" fill="#fff"/>
+
+  <defs>
+	<script>
+		document.querySelector('#instagram').addEventListener("click", function(){
+			
+			console.log('clicked on te SVG!', this.id);
+			
+		})
+		
+	</script>
+</defs>
+</svg>

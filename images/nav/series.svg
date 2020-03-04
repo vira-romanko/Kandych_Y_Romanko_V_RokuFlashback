@@ -1,0 +1,25 @@
+<svg  id="icon2" xmlns="http://www.w3.org/2000/svg" width="33.987" height="25.102" viewBox="0 0 33.987 25.102">
+<style type="text/css">
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+
+  #icon2:hover .st1{
+    cursor:pointer !important;
+    fill:#FFFF00 !important;}
+</style>
+  <g id="series" data-name="video (1)" transform="translate(0 -0.5)">
+    <path id="Path_11" class="st1" data-name="Path 11" d="M33.323.5H6.043a.664.664,0,0,0-.664.664V3.19H3.354a.664.664,0,0,0-.664.664V5.879H.664A.664.664,0,0,0,0,6.543V24.938a.664.664,0,0,0,.664.664H11.649a.664.664,0,0,0,0-1.328H1.328V7.207H27.28V24.274H16.959a.664.664,0,0,0,0,1.328H27.944a.664.664,0,0,0,.664-.664V22.912h2.026a.664.664,0,0,0,.664-.664V20.223h2.026a.664.664,0,0,0,.664-.664V1.164A.664.664,0,0,0,33.323.5ZM29.97,21.585H28.608V6.543a.664.664,0,0,0-.664-.664H4.017V4.517H29.97Zm2.69-2.69H31.3V3.854a.664.664,0,0,0-.664-.664H6.707V1.828H32.66Zm0,0" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_12"  class="st1" data-name="Path 12" d="M124.959,132.644a6.929,6.929,0,1,0-6.929,6.929A6.937,6.937,0,0,0,124.959,132.644Zm-12.53,0a5.6,5.6,0,1,1,5.6,5.6A5.607,5.607,0,0,1,112.429,132.644Zm0,0" transform="translate(-103.726 -116.903)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_13"  class="st1" data-name="Path 13" d="M182.041,176.234a.664.664,0,0,0-.332-.575l-5.483-3.166a.664.664,0,0,0-1,.575V179.4a.664.664,0,0,0,1,.575l5.483-3.166A.664.664,0,0,0,182.041,176.234Zm-5.483,2.016v-4.032l3.492,2.016Zm0,0" transform="translate(-163.598 -160.493)" fill="#fff" fill-rule="evenodd"/>
+    <path id="Path_14"  class="st1" data-name="Path 14" d="M206.144,358.648a.664.664,0,1,0,.664.664A.665.665,0,0,0,206.144,358.648Zm0,0" transform="translate(-191.84 -334.374)"/>
+  </g>
+  <defs>
+	<script>
+		document.querySelector('#series').addEventListener("click", function(){
+			
+			console.log('clicked on te SVG!', this.id);
+			
+		})
+		
+	</script>
+</defs>
+</svg>

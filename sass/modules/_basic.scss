@@ -1,0 +1,58 @@
+//responsive font
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.3rem;
+    }
+  }
+body{
+    background-color: $bg;
+    margin: 0;
+    font-family: $montserrat;
+    color:$white;
+
+    
+   
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+   
+}
+.hidden{
+    display:none;
+}
+.jumbotron{
+    //background-image: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    padding: 0;
+    
+}
+
+
+.jumbotron-login{
+  background-image: url('./images/login/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  padding: 0;
+}

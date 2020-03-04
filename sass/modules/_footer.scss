@@ -1,0 +1,41 @@
+.footer{
+    //height: 40vh;
+    background-color: $footer;
+    img{
+        max-width: 90px;
+        
+    }
+    
+    .social{
+        margin-right: 60px;
+        
+    }
+    .justify-content-sm-center{
+        justify-content: center;
+        margin-left: 0px;
+        padding: 0;
+
+        img, object{
+            max-width: 80%;
+        }
+        
+    }
+
+    .second-nav{
+        
+        margin-top: 40px;
+      
+        
+            a{
+                color: $white;
+                text-decoration: none;
+                &:hover{
+                    color:$hover;
+                }
+            }
+       
+    }
+
+    
+    
+}
