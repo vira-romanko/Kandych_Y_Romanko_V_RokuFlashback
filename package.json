@@ -2,7 +2,7 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/vira-romanko/Kandych_Y_Romanko_V_RokuFlashback/issues"
   },
-  "homepage": "https://github.com/vira-romanko/Kandych_Y_Romanko_V_RokuFlashback#readme"
+  "homepage": "https://github.com/vira-romanko/Kandych_Y_Romanko_V_RokuFlashback#readme",
+  "devDependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "vue": "^2.6.11",
+    "vue-carousel-3d": "^0.2.0"
+  }
 }

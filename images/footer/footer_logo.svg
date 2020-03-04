@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="127.917" viewBox="0 0 106 127.917">
+  <g id="logo" transform="translate(-156 -208.208)">
+    <path id="thunder" d="M31.917,52.063H16.153L24.013,0,0,79.734H15.763L7.9,131.8Z" transform="translate(233.858 208.208) rotate(33)" fill="#fff" opacity="0.475"/>
+    <text id="Roku" transform="translate(211 269)" fill="#fff" font-size="22" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-29.997" y="0">Roku</tspan></text>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(156 219)" fill="none" stroke="#fff" stroke-width="3">
+      <ellipse cx="53" cy="53" rx="53" ry="53" stroke="none"/>
+      <ellipse cx="53" cy="53" rx="51.5" ry="51.5" fill="none"/>
+    </g>
+    <text id="Flashback" transform="translate(209 291)" fill="#fff" font-size="13" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-34.645" y="0">Flashback</tspan></text>
+  </g>
+</svg>

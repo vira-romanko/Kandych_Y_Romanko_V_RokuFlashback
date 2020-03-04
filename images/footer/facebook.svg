@@ -1,0 +1,23 @@
+<svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="46.402" height="46.402" viewBox="0 0 46.402 46.402">
+<style type="text/css">
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#fff;}
+
+  #facebook:hover .st7{
+    cursor:pointer !important;
+    fill:#FFFF00 !important;}
+</style>
+  <path id="Path_52" class="st7" data-name="Path 52" d="M38.66,6.835h-6.1a8.623,8.623,0,0,0-8.613,8.613V20.6H19.118a.906.906,0,0,0-.906.906v6.973a.906.906,0,0,0,.906.906h4.828V44.589H2.719a.907.907,0,0,1-.906-.906V2.719a.907.907,0,0,1,.906-.906H4.531A.906.906,0,0,0,4.531,0H2.719A2.722,2.722,0,0,0,0,2.719V43.683A2.722,2.722,0,0,0,2.719,46.4H24.852a.906.906,0,0,0,.906-.906V28.477a.906.906,0,0,0-.906-.906H20.025V22.41h4.828a.906.906,0,0,0,.906-.906V15.448a6.808,6.808,0,0,1,6.8-6.8h5.195v5.16H32.559a1.662,1.662,0,0,0-1.641,1.641V21.5a.906.906,0,0,0,.906.906h5.8l-.679,5.161H31.825a.906.906,0,0,0-.906.906V45.5a.906.906,0,0,0,.906.906H34.62a.906.906,0,1,0,0-1.813H32.732V29.383h5.011a.906.906,0,0,0,.9-.788l.918-6.973a.906.906,0,0,0-.9-1.024H32.732V15.621h5.929a.906.906,0,0,0,.906-.906V7.742A.907.907,0,0,0,38.66,6.835Zm0,0" transform="translate(0 0)" fill="#fff"/>
+  <path id="Path_53"  class="st7" data-name="Path 53" d="M152.808,0h-31.9a.906.906,0,0,0,0,1.813h31.9a.907.907,0,0,1,.906.906V43.683a.907.907,0,0,1-.906.906H151a.906.906,0,1,0,0,1.813h1.813a2.722,2.722,0,0,0,2.719-2.719V2.719A2.722,2.722,0,0,0,152.808,0Zm0,0" transform="translate(-109.125 0)" fill="#fff"/>
+  <path id="Path_54"  class="st7" data-name="Path 54" d="M412.907,492h0a.906.906,0,1,0,.907.906A.906.906,0,0,0,412.906,492Zm0,0" transform="translate(-374.661 -447.411)" fill="#fff"/>
+  <path id="Path_55"  class="st7" data-name="Path 55" d="M80.907,1.813a.906.906,0,1,0,0-1.813h0a.906.906,0,0,0,0,1.813Zm0,0" transform="translate(-72.75 0)" fill="#fff"/>
+  <defs>
+	<script>
+		document.querySelector('#facebook').addEventListener("click", function(){
+			
+			console.log('clicked on te SVG!', this.id);
+			
+		})
+		
+	</script>
+</defs>
+</svg>
