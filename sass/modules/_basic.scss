@@ -1,6 +1,7 @@
 //responsive font
 html {
     font-size: 1rem;
+    font-family: $montserrat;
   }
   
   @include media-breakpoint-up(sm) {
@@ -49,10 +50,60 @@ body{
 
 
 .jumbotron-login{
-  background-image: url('./images/login/background.jpg');
+  background-image: url('../images/login/background_login.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 110vh;
   padding: 0;
+ 
+.login-page{
+  padding-top: 100px;
+  display: grid;
+}
+h1{
+  font-size: 2rem;
+  padding: 30px;
+ 
+}
+.form-div{
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  //padding-top: 50px;
+  //display: inline-block;
+
+  
+  form{
+    &:active{
+      outline: none;
+    }
+   margin: 50px;
+    input{
+      border-radius: 50px;
+      border: 2px gray solid;
+      background-color: transparent;
+      width: 50%;
+      margin: 0 auto;
+     
+     
+     
+    }
+  
+    button{
+      border-radius: 50px;
+      border: 2px $yellow solid;
+      background-color: transparent;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: white;
+      &:hover{
+        color: white;
+        background-color:$yellow;
+        outline:none;
+      }
+    }
+   
+  }
+
+}
+
 }

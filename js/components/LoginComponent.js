@@ -1,26 +1,34 @@
 export default {
     template: `
-        <div>
-            <div class="jumbotron-login">
-                <p class="lead">Before revisiting your favourite movies, tv shows or music from yesteryear, please log in with a valid username and password.</p>
-                <hr class="my-4">
+        <div class="jumbotron-login">
+            <div class=" login-page d-flex row justify-content-center">
+             <div class="col">
+                    <a href="#" class="col-12 m-4" >
+                        <img class="img-fluid" src="images/logos/logo_roku_main.svg" alt="logo" />
+        
+                    </a>
+                <h1 class=" display-5  lead m-5 align-middle"> Best music of 21st century</h1>
+                </div>
+                <div class="form-div ">
                 <form @submit.prevent="login">
-                    <div class="form-row align-items-center">
-                        <div class="col-md-3 my-1">
-                            <label class="sr-only" for="inlineFormInputName">Name</label>
+                <h2 class="disply-4 text-center m-4"> Sign in</h2>
+                    <div class="form-row justify-content-center align-items-center ">
+                        <div class="col-12 text-center my-1">
+                            <label  for="inlineFormInputName">Name</label>
                             <input v-model="input.username" type="text" class="form-control" id="inlineFormInputName" placeholder="username" required>
                         </div>
 
-                        <div class="col-md-3 my-1">
-                            <label class="sr-only" for="inlineFormPassword">Name</label>
+                        <div class="col-12 text-center my-1 ">
+                            <label  for="inlineFormPassword">Password</label>
                             <input v-model="input.password" type="password" class="form-control" id="inlineFormPassword" placeholder="password" required>
                         </div>
 
-                        <div class="col-auto my-1">
-                            <button type="submit" class="btn btn-primary">Go!</button>
+                        <div class="col-12 text-center my-1">
+                            <button type="submit" class="btn text-center  ">Sign in</button>
                         </div>
                     </div>
-                </form>            
+                </form>    
+                </div>        
             </div>
         </div>
      `,
@@ -46,7 +54,7 @@ export default {
                 let formData = new FormData();
                 formData.append("username", this.input.username);
                 formData.append("password", this.input.password);
-                let url = "./includes/index.php?user=true";
+                let url = "./admin/index.php?user=true";
 
                 fetch(url, {
                     method: "POST",

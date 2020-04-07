@@ -71,18 +71,18 @@ var vm = new Vue({
   }).$mount("#app");
 
 
-  // router.beforeEach((to, from, next) => {
-  //   console.log('router guard fired');
-  //   // if the authenticated property is set to false, then
-  //   // push the user back to the login screen cux theyre not logged in
+  router.beforeEach((to, from, next) => {
+    console.log('router guard fired');
+    // if the authenticated property is set to false, then
+    // push the user back to the login screen cux theyre not logged in
 
-  //   if(vm.authenticated == false){
-  //     next("/login");
+    if(vm.authenticated == false){
+      next("/login");
 
-  //   }else{
-  //     next();
-  //   }
-  // })
+    }else{
+      next();
+    }
+  })
 
 })();
 

@@ -59,7 +59,10 @@ export default {
             
             
         </div> 
-      
+        
+        <h1 class="display-5 ml-4">Recommended for you</h1>
+  
+        
     
     <FooterComponent />
     </div>
@@ -68,19 +71,26 @@ export default {
     data(){
         return{
             message: "Movies",
-            image:"./images/hero/hero_movies.jpg"
+            image:"./images/hero/hero_movies.jpg",
+         
+            
          
         };
     },
   
+    
+     
     methods: {},
+    
+      
+      
    
 
     components: {
         //NavAdminComponent,
         FooterComponent
       },
-      mounted () {
+      mounted(){
        
     }
 };

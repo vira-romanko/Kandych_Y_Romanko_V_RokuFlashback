@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 
 function style(){
     // 1. Where is my scss file?
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', './sass/**/*.scss'])
+    return gulp.src(['sass/main.scss', './sass/**/*.scss'])
     // 2. Pass that file through sass compiler
     .pipe(sass())
     // 3. Where do I save the compiled CSS?
@@ -21,7 +21,7 @@ function watch() {
             baseDir: './'
         }
     });
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', './sass/**/*.scss'], style);
+    gulp.watch(['sass/main.scss', './sass/**/*.scss'], style);
     gulp.watch('./*.html').on('change', browserSync.reload);
     gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 }
