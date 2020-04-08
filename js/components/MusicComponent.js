@@ -1,9 +1,9 @@
 import FooterComponent from "./layout/FooterComponent.js";
-//import NavAdminComponent from "./layout/NavAdminComponent.js";
+import NavAdminComponent from "./layout/NavAdminComponent.js";
 
 
 export default {
-    
+    name: "TheMusicComponent",
 
     template: `
     <div>
@@ -11,27 +11,7 @@ export default {
 
     <div :style="{ backgroundImage: 'url(' + image + ')' }" class="jumbotron  jumbotron-fluid">
             <div class="container-fluid">
-                <nav class="navbar  sticky-top" id="cool">
-                    <ul class="navbar-nav flex-row">
-                    <li class=" nav-item ">
-                    <router-link class=" nav-link" to="/movies"><object data="images/nav/movie.svg" type="image/svg+xml"  class="d-inline-block"></object> <span class="d-none d-lg-inline align-text-bottom ">MOVIES</span></router-link>
-                </li>
-                <li class=" nav-item ">
-                    <router-link class=" nav-link" to="/series"><object data="images/nav/series.svg" type="image/svg+xml"  class="d-inline-block series"></object> <span class="d-none d-lg-inline align-text-bottom ">SERIES</span></router-link>
-                </li>
-                <li class=" nav-item ">
-                    <router-link class=" nav-link" to="/music"><object data="images/nav/music.svg" type="image/svg+xml"  class="d-inline-block"></object> <span class="d-none d-lg-inline align-text-bottom ">MUSIC</span></router-link>
-                </li>
-                        <li class=" nav-item ">
-                            <a class=" nav-link" href="#"><object data="images/nav/watchlist.svg" type="image/svg+xml"  class="d-inline-block"></object> <span class="d-none d-lg-inline align-text-bottom ">WATCHLIST</span></a>
-                        </li>
-                        <li class=" nav-item ">
-                            <a class=" nav-link" href="#"><object data="images/nav/search.svg" type="image/svg+xml"  class="d-inline-block"></object> <span class="d-none d-lg-inline align-text-bottom ">SEARCH</span></a>
-                        </li>  
-                    </ul>
-                    <a class="  nav-link ml-auto" href="#"><object data="images/nav/general-avatar.svg" type="image/svg+xml" class="img-fluid"></object></a>
-
-                </nav>
+            <NavAdminComponent />
 
                 <div class="hero-el" id="reveal1">
                     <a href="#"  class="navbar-brand">
@@ -77,7 +57,7 @@ export default {
    
 
     components: {
-        //NavAdminComponent,
+        NavAdminComponent,
         FooterComponent
       },
       mounted () {

@@ -2,7 +2,7 @@ import SeriesComponent from "./components/SeriesComponent.js";
 import MovieComponent from "./components/MovieComponent.js";
 import MusicComponent from "./components/MusicComponent.js";
 import LoginComponent from "./components/LoginComponent.js";
-import UsersComponent from "./components/UsersComponent.js";
+import AllUsersComponent from "./components/AllUsersComponent.js";
 
 (() => {
   let router = new VueRouter({
@@ -10,12 +10,12 @@ import UsersComponent from "./components/UsersComponent.js";
     routes: [
       { path: '/login', name: "login", component: LoginComponent },
       { path: '/', redirect: { name: "login" } },
-      {path: '/users', name: 'users', component: MovieComponent},
+      {path: '/users', name: 'users', component: AllUsersComponent,  props: true},
       
       
-      { path: '/movies', name: "movies", component: MovieComponent },
-      { path: '/music', name: "music", component: MusicComponent },
-      { path: '/series', name: "series", component: SeriesComponent }
+      { path: '/movies', name: "movies", component: MovieComponent,  props: true },
+      { path: '/music', name: "music", component: MusicComponent,  props: true },
+      { path: '/series', name: "series", component: SeriesComponent,  props: true }
      
     ]
   });
@@ -29,11 +29,6 @@ var vm = new Vue({
     data: {
       authenticated: false,
       administrator: false,
-
-      mockAccount: {
-        username: "user",
-        password: "password"
-      },
 
       user: [],
       },
@@ -51,18 +46,38 @@ var vm = new Vue({
           //type coversion
           // handle implicit type coercion (bad part of js)
           // turn our admin 1 or 0 back into a number
-          this.administrator = parseInt(data.isadmin);
+          //this.administrator = parseInt(data.isadmin);
           this.user = data;
         },
   
         logout() {
-          // delete local session
-  
           // push user back to login page
-          this.$router.push({ path: "/login" });
-          this.authenticated = false;
-          this.administrator = false;
+        this.$router.push({ name: "login" });
+        this.authenticated = false;
+
+        if(localStorage.getItem("cachedUser")){
+          localStorage.removeItem("cachedUser");
         }
+        if(localStorage.getItem("cachedVideo")){
+          localStorage.removeItem("cachedVideo");
+        }
+        }
+      },
+      created:function(){
+
+        //check for a user in localStorage
+        //if we've logged in before, this should be hefe untill we manually remove
+  
+        if(localStorage.getItem("cachedUser")){
+          let user = JASON.parse(localStorage.getItem("cachedUser"));
+  
+          this.authenticated = true;
+  
+          this.$router.push({name: "home", params:{currentuser: user}});
+        }else{
+          this.$router.push({name: "login"});
+        }
+  
       },
     
   

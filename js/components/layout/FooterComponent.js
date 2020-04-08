@@ -18,14 +18,18 @@ export default {
 
     </div>
 
-    <div class="row  second-nav container-fluid footer-el">
-      <section class="col-lg-2  display-5 ">
-        <a href="#" class="first-col">Privacy Policy</a>
-        <a href="#" class="first-col">Privacy Policy</a>
-        <a href="#" class="first-col">Privacy Policy</a>
+    <div class=" d-flex row  second-nav container-fluid footer-el ml-2 justify-content-center">
+      <section class=" text-center mr-2 col-6 display-5 mb-2">
+        <a href="#" class="first-col p-4">Privacy Policy</a>
+        <a href="#" class="first-col p-4">Privacy Policy</a>
+        <a href="#" class="first-col p-4">Privacy Policy</a>
 
         </section>
+        <div>
+        <p>(c)Dream Team - Vira&Yuliia 2020</p>
         </div>
+        </div>
+        
 
 
     

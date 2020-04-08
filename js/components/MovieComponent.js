@@ -1,8 +1,9 @@
 import FooterComponent from "./layout/FooterComponent.js";
-//import NavAdminComponent from "./layout/NavAdminComponent.js";
+import NavAdminComponent from "./layout/NavAdminComponent.js";
 
 
 export default {
+    name: "TheMovieComponent",
     
 
     template: `
@@ -11,28 +12,8 @@ export default {
 
     <div :style="{ backgroundImage: 'url(' + image + ')' }" class="jumbotron  jumbotron-fluid">
             <div class="container-fluid">
-                <nav class="navbar  sticky-top" id="cool">
-                    <ul class="navbar-nav flex-row">
-                    <li class=" nav-item ">
-                    <router-link class=" nav-link" to="/movies"><object data="images/nav/movie.svg" type="image/svg+xml"  class="d-inline-block"></object> <span class="d-none d-lg-inline align-text-bottom ">MOVIES</span></router-link>
-                </li>
-                <li class=" nav-item ">
-                    <router-link class=" nav-link" to="/series"><object data="images/nav/series.svg" type="image/svg+xml"  class="d-inline-block series"></object> <span class="d-none d-lg-inline align-text-bottom ">SERIES</span></router-link>
-                </li>
-                <li class=" nav-item ">
-                    <router-link class=" nav-link" to="/music"><object data="images/nav/music.svg" type="image/svg+xml"  class="d-inline-block"></object> <span class="d-none d-lg-inline align-text-bottom ">MUSIC</span></router-link>
-                </li>
-                        <li class=" nav-item ">
-                            <a class=" nav-link" href="#"><object data="images/nav/watchlist.svg" type="image/svg+xml"  class="d-inline-block"></object> <span class="d-none d-lg-inline align-text-bottom ">WATCHLIST</span></a>
-                        </li>
-                        <li class=" nav-item ">
-                            <a class=" nav-link" href="#"><object data="images/nav/search.svg" type="image/svg+xml"  class="d-inline-block"></object> <span class="d-none d-lg-inline align-text-bottom ">SEARCH</span></a>
-                        </li>  
-                    </ul>
-                    <a class="  nav-link ml-auto" href="#"><object data="images/nav/general-avatar.svg" type="image/svg+xml" class="img-fluid"></object></a>
-
-                </nav>
-
+            <NavAdminComponent />
+               
                 <div class="hero-el" id="reveal1">
                     <a href="#"  class="navbar-brand">
                         <img class="img-fluid" src="images/logos/logo_roku_main.svg" alt="logo" />
@@ -41,7 +22,7 @@ export default {
                     
                 </div>
 
-                <h1 class="display-2 hero-el">
+                <h1 class="display-3 hero-el">
                 {{ message }}
                 </h1>
                 <div class=" buttons hero-el d-flex flex-wrap justify-content-sm-center justify-content-lg-start">
@@ -59,35 +40,96 @@ export default {
             
             
         </div> 
+        <div class="container">
         
-        <h1 class="display-5 ml-4">Recommended for you</h1>
-  
+        <h2 class="display-5 ml-4">Recommended for you</h2>
+        <section>
+    <div class="row">
+        <div class="col-12 order-2 order-md-1 col-md-3 media-container">
+            <h4 class="media-title">{{currentMediaDetails.movies_title}}</h4>
+            <p class="media-details" v-html="currentMediaDetails.movies_storyline"></p>
+            <span class="media-time">{{currentMediaDetails.movies_runtime}}</span>
+            <span class="media-year">{{currentMediaDetails.movies_year}} </span>
+        </div>
+
+        <div class="col-12 order-1 order-md-2 col-md-9 media-container">
+            <video autoplay controls muted :src="'video/' + currentMediaDetails.movies_trailer" class="fs-video"></video>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-12 col-sm-9">
+        <div class="thumb-wrapper clearfix">
+        <img v-for="item in allRetrievedVideos" :src="'images/' + item.movies_cover" alt="meida thum" @click="loadNewMovie(item)" class="img-thumbnail rounded float-left media-thumb">
+        </div>
+        </div>
+        </div>
+    </section>
+        
+        </div>
         
     
     <FooterComponent />
+    
     </div>
    
     `,
     data(){
+        
+          
         return{
             message: "Movies",
             image:"./images/hero/hero_movies.jpg",
+            currentMediaDetails: {},
+            allRetrievedVideos: []
+
          
             
          
         };
     },
+    created: function (){
+        this.retrieveVideoContent();
+    },
   
     
      
-    methods: {},
+    methods: {
+        retrieveVideoContent() {
+            // fetch all the video content here (don't care about filtering, genre etc at this point)
+            //debugger;
+            if(localStorage.getItem("cachedVideo")){
+                this.allRetrievedVideos = JSON.parse(localStorage.getItem("cachedVideo"));
+                this.currentMediaDetails = this.allRetrievedVideos[0];
+
+            }else{
+
+                let url = './admin/index.php?media=movies';
+                fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    localStorage.setItem("cachedVideo", JSON.stringify(data));
+
+                    this.allRetrievedVideos = data;
+                    this.currentMediaDetails = data[0];
+                })
+    
+
+            }
+          
+
+        },
+
+        loadNewMovie(movie) {
+            this.currentMediaDetails = movie;
+        }
+    },
     
       
       
    
 
     components: {
-        //NavAdminComponent,
+        NavAdminComponent,
         FooterComponent
       },
       mounted(){
