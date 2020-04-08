@@ -4,12 +4,12 @@ export default {
             <div class=" login-page d-flex row justify-content-center">
              <div class="col">
                     <a href="#" class="col-12 m-4" >
-                        <img class="img-fluid" src="images/logos/logo_roku_main.svg" alt="logo" />
+                        <img class="img-fluid text-center" src="images/logos/logo_roku_main.svg" alt="logo" />
         
                     </a>
-                <h1 class=" display-5  lead m-5 align-middle"> Best music of 21st century</h1>
+                <h1 class=" display-5  lead m-5 align-middle text-center"> Best media of 21st century</h1>
                 </div>
-                <div class="form-div ">
+                <div class="form-div">
                 <form @submit.prevent="login">
                 <h2 class="disply-4 text-center m-4"> Sign in</h2>
                     <div class="form-row justify-content-center align-items-center ">
@@ -54,7 +54,8 @@ export default {
                 let formData = new FormData();
                 formData.append("username", this.input.username);
                 formData.append("password", this.input.password);
-                let url = "./admin/index.php?user=true";
+                let url = `./admin/admin_login.php`;
+                //let url = "./admin/index.php?user=true";
 
                 fetch(url, {
                     method: "POST",

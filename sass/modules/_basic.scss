@@ -2,7 +2,21 @@
 html {
     font-size: 1rem;
     font-family: $montserrat;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    input, button{
+      outline: transparent;
+      &:active{
+        outline: transparent;
+      }
+      &:visited{
+        outline: transparent;
+      }
   }
+
+}
+
   
   @include media-breakpoint-up(sm) {
     html {
@@ -43,8 +57,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
+    //height: 110vh;
+
     padding: 0;
+  
     
 }
 
@@ -63,11 +79,12 @@ body{
 }
 h1{
   font-size: 2rem;
-  padding: 30px;
+  padding: 20px;
  
 }
 .form-div{
   background-color: rgba($color: #000000, $alpha: 0.5);
+  //height: auto;
   //padding-top: 50px;
   //display: inline-block;
 
@@ -106,4 +123,39 @@ h1{
 
 }
 
+}
+
+//All users
+.single-user{
+  font-family: $montserrat;
+  .users-img:hover > .user-name{
+    border: 5px solid red;
+  }
+  .user-name{
+    cursor: pointer;
+    &:hover{
+      color: $yellow;
+      transition: 0.25s;
+    }
+  }
+
+}
+
+.all-users{
+  background-image: url('../images/login/background_login.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 20px;
+  .profile-button{
+    margin: 0 auto;
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 1px solid $white;
+    border-radius: 50px;
+    
+
+  }
 }

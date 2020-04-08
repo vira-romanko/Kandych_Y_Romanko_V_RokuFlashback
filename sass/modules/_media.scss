@@ -1,0 +1,8 @@
+//All users media
+
+@include media-breakpoint-up(lg) {
+    .all-users, .jumbotron{
+        height: 110vh;
+    }
+
+  }
