@@ -16,9 +16,9 @@ One of Flashback's main features is the differentiation of the user profile. Use
 * In the Browser go ``` http://localhost:8888/Kandych_Y_Romanko_V_RokuFlashback```
 
 ## LOG IN
-* Login credentials: 
-* **username:Vira 
-* **password: password
+ Login credentials: 
+* **username**:Vira 
+* **password**: password
 
 
 ## Build with/ Tools
