@@ -53,6 +53,9 @@ One of Flashback's main features is the differentiation of the user profile. Use
 (some of buttons are for visualization purposes only and serve as a potential concept)
 https://xd.adobe.com/view/1bb33e73-ac9a-4d0b-55dc-891f6e81bd7e-6d82/
 
+## Des Notes
+https://docs.google.com/document/d/1KkYjdaPiahJ4wpoLzl-TLklbIFVa4HyCDnFw6Fz3zEQ/edit?ts=5e90fef7
+
 ## Dev Notes
 * Dev notes link goes here
 
