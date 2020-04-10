@@ -57,7 +57,7 @@ https://xd.adobe.com/view/1bb33e73-ac9a-4d0b-55dc-891f6e81bd7e-6d82/
 https://docs.google.com/document/d/1KkYjdaPiahJ4wpoLzl-TLklbIFVa4HyCDnFw6Fz3zEQ/edit?ts=5e90fef7
 
 ## Dev Notes
-* Dev notes link goes here
+* https://docs.google.com/document/d/1VTrLpQC4dTSvSpmDZ3cvZK8lB3O5yaKx3krxhjx3D28/edit?usp=sharing
 
 ## Future Plans
 * Add tv shows and music
