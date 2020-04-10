@@ -45,11 +45,12 @@ For testing admin page
 
 * **Pinterest/Dribbble/Google** - *Design inspiration/images* 
 
-* **Link to Desktop Prototyping**
+## Link to Desktop Prototyping  
 (some of buttons are for visualization purposes only and serve as a potential concept)
 https://xd.adobe.com/view/1bb33e73-ac9a-4d0b-55dc-891f6e81bd7e-6d82/
 
 ## Future Plans
+
 * Structure sass files
 * Add more interactivity
 * fix some bootstrap responsive breakpoints and spacing
