@@ -56,10 +56,18 @@ export default {
             <video autoplay controls muted :src="'video/' + currentMediaDetails.movies_trailer" class="fs-video"></video>
         </div>
     </div>
+
+       <div class="col-12 col-sm-9 media-info">
+          <ul class="media-genres">
+            <li>
+            <a href="action" @click.prevent="filterMedia('action')">Action</a>
+            </li>
+            </ul>
+      </div>
     <div class="row">
     <div class="col-12 col-sm-9">
-        <div class="thumb-wrapper clearfix">
-        <img v-for="item in allRetrievedVideos" :src="'images/' + item.movies_cover" alt="meida thum" @click="loadNewMovie(item)" class="img-thumbnail rounded float-left media-thumb">
+        <div class="d-flex flex-wrap row clearfix">
+        <img v-for="item in allRetrievedVideos" :src="'images/movies/' + item.movies_cover" alt="meida thum" @click="loadNewMovie(item)" class="col-4 p-2 img-fluid">
         </div>
         </div>
         </div>
@@ -94,6 +102,17 @@ export default {
     
      
     methods: {
+        filterMedia(filter){
+            //debugger;
+            let url=`./admin/index.php?media=movies&filter=${filter}`;
+            fetch(url)
+            .then(res =>res.json())
+            .then(data => {
+                this.allRetrievedVideos = data;
+                this.currentMediaDetails = data[0];
+            })
+
+        },
         retrieveVideoContent() {
             // fetch all the video content here (don't care about filtering, genre etc at this point)
             //debugger;
@@ -121,7 +140,10 @@ export default {
 
         loadNewMovie(movie) {
             this.currentMediaDetails = movie;
-        }
+        },
+
+        
+     
     },
     
       
