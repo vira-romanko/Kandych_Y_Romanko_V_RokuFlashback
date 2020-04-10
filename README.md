@@ -15,7 +15,7 @@ For testing admin page
 * Put the project in htdocs folder
 * Import the database from Database folder
 * In the Browser go ``` http://localhost:8888/Kandych_Y_Romanko_V_RokuFlashback/#/login```
-* ##Login credentials: username: password:
+* ##Login credentials: username:Vira password: password
 * Now you can adit info on the page
 
 ## Build with/ Tools
@@ -46,7 +46,8 @@ For testing admin page
 * **Pinterest/Dribbble/Google** - *Design inspiration/images* 
 
 * **Link to Desktop Prototyping**
-
+(some of buttons are for visualization purposes only and serve as a potential concept)
+https://xd.adobe.com/view/1bb33e73-ac9a-4d0b-55dc-891f6e81bd7e-6d82/
 
 ## Future Plans
 * Structure sass files
