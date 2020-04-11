@@ -4,6 +4,7 @@ import MusicComponent from "./components/MusicComponent.js";
 import LoginComponent from "./components/LoginComponent.js";
 import AllUsersComponent from "./components/AllUsersComponent.js";
 
+
 (() => {
   let router = new VueRouter({
     // set routes

@@ -26,11 +26,11 @@ export default {
                 {{ message }}
                 </h1>
                 <div class=" buttons hero-el d-flex flex-wrap justify-content-sm-center justify-content-lg-start">
-                    <button class="pulse">1950's</button>
-                    <button class="pulse">1960's</button>
-                    <button class="pulse">1970's</button>
-                    <button class="pulse">1980's</button>
-                    <button class="pulse">1990's</button>
+                    <button class="pulse"><a href="1950" @click.prevent="filterMedia('1950')">1950's</a></button>
+                    <button class="pulse"><a href="1960" @click.prevent="filterMedia('1960')">1960's</a></button>
+                    <button class="pulse"><a href="1970" @click.prevent="filterMedia('1970')">1970's</a></button>
+                    <button class="pulse"><a href="1980" @click.prevent="filterMedia('1980')">1980's</a></button>
+                    <button class="pulse"><a href="1990" @click.prevent="filterMedia('1990')">1990's</a></button>
 
                 </div>
                 
@@ -45,29 +45,34 @@ export default {
         <h2 class="display-5 ml-4">Recommended for you</h2>
         <section>
     <div class="row">
-        <div class="col-12 order-2 order-md-1 col-md-3 media-container">
-            <h4 class="media-title">{{currentMediaDetails.movies_title}}</h4>
+        <div class="col-sm-12  mt-4 col-md-6 media-container">
+            <h4 class=" media-title">{{currentMediaDetails.movies_title}}</h4>
+            <a>Storyline</a>
             <p class="media-details" v-html="currentMediaDetails.movies_storyline"></p>
             <span class="media-time">{{currentMediaDetails.movies_runtime}}</span>
-            <span class="media-year">{{currentMediaDetails.movies_year}} </span>
+            <span class=" d-block media-year">{{currentMediaDetails.movies_year}} </span>
+        </div>
+        <div class="col-sm-12 order-1 order-md-2 col-md-6 media-container">
+        <img :src="'images/movies/' + currentMediaDetails.movies_cover" alt="meida thum" width="400" class=" p-2 img-fluid">
+        </div>
         </div>
 
-        <div class="col-12 order-1 order-md-2 col-md-9 media-container">
-            <video autoplay controls muted :src="'video/' + currentMediaDetails.movies_trailer" class="fs-video"></video>
-        </div>
-    </div>
 
-       <div class="col-12 col-sm-9 media-info">
-          <ul class="media-genres">
-            <li>
-            <a href="action" @click.prevent="filterMedia('action')">Action</a>
-            </li>
-            </ul>
-      </div>
+        <div>
+        <a>Play</a>
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" :src="currentMediaDetails.movies_trailer" allowfullscreen></iframe>
+        </div>
+        
+          
+        </div>
+    
+
+    
     <div class="row">
     <div class="col-12 col-sm-9">
-        <div class="d-flex flex-wrap row clearfix">
-        <img v-for="item in allRetrievedVideos" :src="'images/movies/' + item.movies_cover" alt="meida thum" @click="loadNewMovie(item)" class="col-4 p-2 img-fluid">
+        <div class="d-flex flex-wrap row clearfix mx-3 justify-content-center">
+        <img v-for="item in allRetrievedVideos" :src="'images/movies/' + item.movies_cover" alt="meida thum" @click="loadNewMovie(item)" class="col-4 p-2  img-fluid">
         </div>
         </div>
         </div>

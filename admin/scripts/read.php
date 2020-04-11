@@ -13,6 +13,7 @@ function getAll($tbl)
     }
 }
 
+
 function getSingleMovie($tbl, $col, $id)
 {
     //TODO: finish the function based on getAll, this time only return
@@ -22,6 +23,7 @@ function getSingleMovie($tbl, $col, $id)
     // $query = 'SELECT * FROM '.$tbl.' WHERE '$col' = '.$id;
     $query = "SELECT * FROM $tbl WHERE $col = $id";
     $results = $pdo->query($query);
+    
 
     if ($results) {
         return $results;

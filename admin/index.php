@@ -25,3 +25,4 @@ if(isset($_GET['filter'])){
     $results = getAll($tbl);
     echo json_encode($results);
 }
+
