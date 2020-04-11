@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 10, 2020 at 10:10 PM
+-- Generation Time: Apr 11, 2020 at 02:34 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.3.8
 
@@ -387,11 +387,11 @@ CREATE TABLE `tbl_genre` (
 --
 
 INSERT INTO `tbl_genre` (`genre_id`, `genre_name`) VALUES
-(1, 'Action'),
-(2, 'Adventure'),
-(3, 'Comedy'),
-(4, 'Crime'),
-(5, 'Drama'),
+(1, '1950'),
+(2, '1960'),
+(3, '1970'),
+(4, '1980'),
+(5, '1990'),
 (6, 'Historical'),
 (7, 'Horror'),
 (8, 'Musical'),
@@ -658,11 +658,11 @@ CREATE TABLE `tbl_movies` (
 --
 
 INSERT INTO `tbl_movies` (`movies_id`, `movies_cover`, `movies_title`, `movies_year`, `movies_runtime`, `movies_storyline`, `movies_trailer`, `movies_release`) VALUES
-(1, 'rear_window.png', 'Rear Window', '1950', '1h 55min', 'Professional photographer Jeff is stuck in his apartment, \r\nrecuperating from a broken leg. Out of boredom, he begins to spy \r\non his neighbours and comes across a shocking revelation.', 'rear_window.mp4', '1 August 1954 (Canada)'),
-(2, 'tiff.png', 'Breakfast at Tiffany’s', '1960', '1h 55min', 'A young New York socialite becomes interested in a young \r\nman who has moved into her apartment building, \r\nbut her past threatens to get in the way.\r\n\r\n', 'tiff.mp4', '6 October 1961 (USA)'),
-(3, 'rocky.png', 'ROCKY', '1970', '2h 1m', 'Rocky Balboa, a small-time boxer, gets a chance to fight \r\nheavyweight champion Apollo Creed. In a bid to earn respect and glory, \r\nRocky jumps into the ring, unaware of the tough task ahead of him.', 'rocky.mp4', '21 November 1971 (USA)'),
-(4, 'back.png', 'Back to \r\nthe Future', '1980', '2h', 'Marty travels back in time using an eccentric scientist’s\r\ntime machine. However, he must make his high-school-aged \r\nparents fall in love in order to return to the present.', 'back.mp4', '2 July 1985 (USA)'),
-(5, 'home.png', 'Home Alone', '1990', '2h 9min', 'Eight-year-old Kevin is accidentally left behind when his family\r\nleaves for France. At first, he is happy to be in charge, but when \r\nthieves try to break into his home, he tries to put up a fight. ', 'home.mp4', '16 November 1990 (Canada)');
+(1, 'rear_window.png', 'Rear Window', '1950', '1h 55min', 'Professional photographer Jeff is stuck in his apartment, \r\nrecuperating from a broken leg. Out of boredom, he begins to spy \r\non his neighbours and comes across a shocking revelation.', 'https://www.youtube.com/embed/m01YktiEZCw', '1 August 1954 (Canada)'),
+(2, 'tiff.png', 'Breakfast at Tiffany’s', '1960', '1h 55min', 'A young New York socialite becomes interested in a young \r\nman who has moved into her apartment building, \r\nbut her past threatens to get in the way.\r\n\r\n', 'https://www.youtube.com/embed/-XcLVQCDtbM', '6 October 1961 (USA)'),
+(3, 'rocky.png', 'ROCKY', '1970', '2h 1m', 'Rocky Balboa, a small-time boxer, gets a chance to fight \r\nheavyweight champion Apollo Creed. In a bid to earn respect and glory, \r\nRocky jumps into the ring, unaware of the tough task ahead of him.', 'https://www.youtube.com/embed/3VUblDwa648', '21 November 1971 (USA)'),
+(4, 'back.png', 'Back to \r\nthe Future', '1980', '2h', 'Marty travels back in time using an eccentric scientist’s\r\ntime machine. However, he must make his high-school-aged \r\nparents fall in love in order to return to the present.', 'https://www.youtube.com/embed/qvsgGtivCgs', '2 July 1985 (USA)'),
+(5, 'home.png', 'Home Alone', '1990', '2h 9min', 'Eight-year-old Kevin is accidentally left behind when his family\r\nleaves for France. At first, he is happy to be in charge, but when \r\nthieves try to break into his home, he tries to put up a fight. ', 'https://www.youtube.com/embed/jEDaVHmw7r4', '16 November 1990 (Canada)');
 
 -- --------------------------------------------------------
 
@@ -835,18 +835,13 @@ CREATE TABLE `tbl_mov_genre` (
 
 INSERT INTO `tbl_mov_genre` (`mov_genre_id`, `movies_id`, `genre_id`) VALUES
 (1, 1, 1),
-(2, 1, 2),
-(3, 1, 9),
-(4, 2, 1),
-(5, 2, 5),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5),
 (6, 2, 6),
 (7, 2, 10),
-(8, 3, 1),
-(9, 3, 5),
 (10, 3, 9),
-(11, 4, 1),
-(12, 4, 2),
-(13, 4, 5),
 (14, 4, 9),
 (15, 5, 8),
 (16, 5, 13),
